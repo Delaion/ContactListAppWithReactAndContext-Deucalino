@@ -17,7 +17,8 @@ const addContact=()=>{
     };
 
     return (
-       <div className="mt-3 bg-dark text-light">
+      <form onChange={(e)=>changeHelper(e)}>
+  <div className="mt-3 bg-dark text-light">
          <div className="d-flex justify-content-center">
              <h1><i class="fa-solid fa-id-card">Deucalino´s Contact List 4U.</i></h1>
          </div>
@@ -27,7 +28,7 @@ const addContact=()=>{
          <div className="card mb-3 bg-dark" style="max-width: 540px;">
            <div className="row g-0">
               <div className="col-md-4">
-               <img src="..." className="img-fluid rounded-start" alt="..."/>
+               <img src="..." className="img-fluid rounded-start" value={contact.img} alt="..."/>
             </div>
                <div className="col-md-8">
                  <div className="card-body bg-secondary  bg-opacity-25">
@@ -99,6 +100,8 @@ const addContact=()=>{
         </div>
        </div>
      </div>
+    </form>
+     
        );
      };
 

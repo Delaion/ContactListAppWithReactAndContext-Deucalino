@@ -4,7 +4,8 @@ export const contactContext= createContext ();
 
 const contactProvider=({children})=>{
 	const [contact, setContact]=useState({
-		fullname:"",
+		FirstName:"",
+		LastName:"",
 		email:"",
 		phone:"",
 		adress:"",
